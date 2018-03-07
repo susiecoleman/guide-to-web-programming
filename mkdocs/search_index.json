@@ -2,27 +2,47 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Programming for the Web\n\n\nSee the Pen \nThe Last Experience\n by Gerard Ferrandez (\n@ge1doot\n) on \nCodePen\n.", 
+            "text": "Programming for the Web\n\n\nThis guide covers HTML, CSS and Javascript which are used together to make interactive websites. They are sometimes referred to as 'front end technologies'.\n\n\nDebugging\n\n\nIf a website is not loading correctly in the browser then the developer tools can be used to diagnose the problem\n\n\nChrome Developer Tools\n\n\nFirefox Developer Tools", 
             "title": "Home"
         }, 
         {
             "location": "/#programming-for-the-web", 
-            "text": "See the Pen  The Last Experience  by Gerard Ferrandez ( @ge1doot ) on  CodePen .", 
+            "text": "This guide covers HTML, CSS and Javascript which are used together to make interactive websites. They are sometimes referred to as 'front end technologies'.", 
             "title": "Programming for the Web"
         }, 
         {
+            "location": "/#debugging", 
+            "text": "If a website is not loading correctly in the browser then the developer tools can be used to diagnose the problem  Chrome Developer Tools  Firefox Developer Tools", 
+            "title": "Debugging"
+        }, 
+        {
             "location": "/html/", 
-            "text": "HTML\n\n\nStructuring a HTML Document\n\n\nThis is a very basic HTML document.\n\n\n!DOCTYPE html\n\n\nhtml\n\n    \nhead\n\n    \n/head\n\n    \nbody\n\n    \n/body\n\n\n/html", 
+            "text": "HTML\n\n\nHTML stands for Hyper Text Markup Language. It gives the page a semantic structure e.g. This is text is a paragraph, this text is a header, this is an image, this is link. The browser will then use this information to decide how to display the HTML. For example header text should be bigger than paragraph text.\n\n\nElements\n\n\nThese items (paragraphs, headers, images etc.) are referred to as elements. A webpage is a collection of elements.\n\n\nTags\n\n\nTags are used to indicate an element (e.g. this is a paragraph). A html document is text annotated with html tags and a web page is a html document.\n\n\nTags look like this:\n\n\np\nThis is a paragraph\n/p\n\n\n\n\n\nThere is a finite list of tags as browsers need to know all available tags in order to decide how to handle them. This list is maintained by \nW3C (World Wide Web Consortium)\n. A list of all elements is available \nhere\n. \n\n\nAttributes\n\n\nElements can have attributes that provide additional information about the element or adjust the behaviour of the element. For example when using an \nimage tag\n an attribute is used to provide the link to an image. When using a \nform tag\n you can use it's autocomplete attribute to determine whether or not values can be autocompleted by the browswer. A list of all attributes is available \nhere\n.\n\n\nStructuring a HTML Document\n\n\nThis is a very basic HTML document.\n\n\n!DOCTYPE html\n\n\nhtml\n\n    \nhead\n\n    \n/head\n\n    \nbody\n\n    \n/body\n\n\n/html\n\n\n\n\n\nTags are nested and the structure of a webpage is like a tree. The \nhtml\n tag is the top level tag and it has 2 children \nhead\n and \nbody\n. The \nhead\n tag has metadata about the page e.g. links to the css and the \nbody\n tag contains the html for content that will appear on your site.\n\n\nThis is a more complicated example including some more html tags.\n\n\n!DOCTYPE html\n\n\nhtml\n\n    \nhead\n\n        \nlink rel=\nstylesheet\n href=\nstyle.css\n\n    \n/head\n\n    \nbody\n\n        \nh1\nBees\n/h1\n\n        \np\nBees are flying insects closely related to wasps and ants, known for their role in pollination and, in the case of the best-known bee species, the European honey bee, for producing honey and beeswax. Bees are a monophyletic lineage within the superfamily Apoidea and are presently considered a clade, called Anthophila. There are nearly 20,000 known species of bees in seven recognized biological families. They are found on every continent except Antarctica, in every habitat on the planet that contains insect-pollinated flowering plants.\n/p\n\n        \np\nSome species including honey bees, bumblebees, and stingless bees live socially in colonies. Bees are adapted for feeding on nectar and pollen, the former primarily as an energy source and the latter primarily for protein and other nutrients. Most pollen is used as food for larvae. Bee pollination is important both ecologically and commercially; the decline in wild bees has increased the value of pollination by commercially managed hives of honey bees.\n/p\n\n        \nimg src=\nhttps://upload.wikimedia.org/wikipedia/commons/3/32/Bee-apis.jpg\n /\n\n    \n/body\n\n\n/html\n\n\n\n\n\nThis shows what the html looks like when rendered by a browser. By clicking on 'edit on Codepen' you can experiment with changing the html or adding new html tags. Note codepen does not include head and body tags in it's examples so any code written here would need to go inside the body tag if it was being added to a webpage.\n\n\nSee the Pen \nBasic HTML Elements\n by Susie (\n@susiec20\n) on \nCodePen\n.", 
             "title": "HTML"
         }, 
         {
             "location": "/html/#html", 
-            "text": "", 
+            "text": "HTML stands for Hyper Text Markup Language. It gives the page a semantic structure e.g. This is text is a paragraph, this text is a header, this is an image, this is link. The browser will then use this information to decide how to display the HTML. For example header text should be bigger than paragraph text.", 
             "title": "HTML"
         }, 
         {
+            "location": "/html/#elements", 
+            "text": "These items (paragraphs, headers, images etc.) are referred to as elements. A webpage is a collection of elements.", 
+            "title": "Elements"
+        }, 
+        {
+            "location": "/html/#tags", 
+            "text": "Tags are used to indicate an element (e.g. this is a paragraph). A html document is text annotated with html tags and a web page is a html document.  Tags look like this:  p This is a paragraph /p   There is a finite list of tags as browsers need to know all available tags in order to decide how to handle them. This list is maintained by  W3C (World Wide Web Consortium) . A list of all elements is available  here .", 
+            "title": "Tags"
+        }, 
+        {
+            "location": "/html/#attributes", 
+            "text": "Elements can have attributes that provide additional information about the element or adjust the behaviour of the element. For example when using an  image tag  an attribute is used to provide the link to an image. When using a  form tag  you can use it's autocomplete attribute to determine whether or not values can be autocompleted by the browswer. A list of all attributes is available  here .", 
+            "title": "Attributes"
+        }, 
+        {
             "location": "/html/#structuring-a-html-document", 
-            "text": "This is a very basic HTML document.  !DOCTYPE html  html \n     head \n     /head \n     body \n     /body  /html", 
+            "text": "This is a very basic HTML document.  !DOCTYPE html  html \n     head \n     /head \n     body \n     /body  /html   Tags are nested and the structure of a webpage is like a tree. The  html  tag is the top level tag and it has 2 children  head  and  body . The  head  tag has metadata about the page e.g. links to the css and the  body  tag contains the html for content that will appear on your site.  This is a more complicated example including some more html tags.  !DOCTYPE html  html \n     head \n         link rel= stylesheet  href= style.css \n     /head \n     body \n         h1 Bees /h1 \n         p Bees are flying insects closely related to wasps and ants, known for their role in pollination and, in the case of the best-known bee species, the European honey bee, for producing honey and beeswax. Bees are a monophyletic lineage within the superfamily Apoidea and are presently considered a clade, called Anthophila. There are nearly 20,000 known species of bees in seven recognized biological families. They are found on every continent except Antarctica, in every habitat on the planet that contains insect-pollinated flowering plants. /p \n         p Some species including honey bees, bumblebees, and stingless bees live socially in colonies. Bees are adapted for feeding on nectar and pollen, the former primarily as an energy source and the latter primarily for protein and other nutrients. Most pollen is used as food for larvae. Bee pollination is important both ecologically and commercially; the decline in wild bees has increased the value of pollination by commercially managed hives of honey bees. /p \n         img src= https://upload.wikimedia.org/wikipedia/commons/3/32/Bee-apis.jpg  / \n     /body  /html   This shows what the html looks like when rendered by a browser. By clicking on 'edit on Codepen' you can experiment with changing the html or adding new html tags. Note codepen does not include head and body tags in it's examples so any code written here would need to go inside the body tag if it was being added to a webpage.  See the Pen  Basic HTML Elements  by Susie ( @susiec20 ) on  CodePen .", 
             "title": "Structuring a HTML Document"
         }, 
         {
