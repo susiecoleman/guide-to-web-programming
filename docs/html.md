@@ -93,4 +93,4 @@ This example shows how to use a span tag to apply a style to specific part of th
 <p data-height="207" data-theme-id="0" data-slug-hash="gewmgX" data-default-tab="html,result" data-user="susiec20" data-embed-version="2" data-pen-title="Basic span example" class="codepen">See the Pen <a href="https://codepen.io/susiec20/pen/gewmgX/">Basic span example</a> by Susie (<a href="https://codepen.io/susiec20">@susiec20</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-#TODO diagram of inline vs block element
+A more detailed summary and example of the difference between inline and block level elements is available on the [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements)
