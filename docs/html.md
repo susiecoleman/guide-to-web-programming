@@ -1,10 +1,10 @@
 # HTML
 
-HTML stands for Hyper Text Markup Language. It gives the page a semantic structure e.g. This is text is a paragraph, this text is a header, this is an image, this is link. The browser will then use this information to decide how to display the HTML. For example header text should be bigger than paragraph text.
+HTML stands for Hyper Text Markup Language. It gives a page of text a semantic structure e.g. This is text is a paragraph, this text is a header, this is an image, this is link. The browser will then use this information to decide how to display the text in the html document. For example, header text should be bigger than paragraph text. 
 
 ## Elements
 
-These items (paragraphs, headers, images etc.) are referred to as elements. A webpage is a collection of elements.
+The items that make up a web page (paragraphs, headers, images etc.) are referred to as elements. A webpage is a collection of elements.
 
 ## Tags
 
@@ -21,6 +21,11 @@ There is a finite list of tags as browsers need to know all available tags in or
 
 Elements can have attributes that provide additional information about the element or adjust the behaviour of the element. For example when using an [image tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) an attribute is used to provide the link to an image. When using a [form tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form) you can use it's autocomplete attribute to determine whether or not values can be autocompleted by the browswer. A list of all attributes is available [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes).
 
+Attributes on tags look like this:
+```
+<p style="color:red">This is a paragraph with an attribute</p>
+```
+
 ## Structuring a HTML Document
 
 This is a very basic HTML document.
@@ -35,7 +40,11 @@ This is a very basic HTML document.
 </html>
 ```
 
-Tags are nested and the structure of a webpage is like a tree. The `html` tag is the top level tag and it has 2 children `head` and `body`. The `head` tag has metadata about the page e.g. links to the css and the `body` tag contains the html for content that will appear on your site.
+In a html document there is a top level tag (`<html>`) and then the other tags are nested within these tags. Between an opening and closing tag of the same type there can be text and there can be other html tags
+
+This means the structure of a webpage is like a tree. The `html` tag is the top level tag and it has 2 children `head` and `body`. The `head` tag has metadata about the page e.g. links to the css and the `body` tag contains the html for content that will appear on your site.
+
+#TODO Tree diagram
 
 This is a more complicated example including some more html tags.
 
@@ -43,6 +52,7 @@ This is a more complicated example including some more html tags.
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>Bees Website</title>
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
@@ -57,3 +67,30 @@ This shows what the html looks like when rendered by a browser. By clicking on '
 
 <p data-height="628" data-theme-id="0" data-slug-hash="BYXEeO" data-default-tab="html,result" data-user="susiec20" data-embed-version="2" data-pen-title="Basic HTML Elements" class="codepen">See the Pen <a href="https://codepen.io/susiec20/pen/BYXEeO/">Basic HTML Elements</a> by Susie (<a href="https://codepen.io/susiec20">@susiec20</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+## Div and Span Tag
+Tags do two things:
+
+1. Provide semantic information about the parts of the website (Paragraphs, headers, images)
+2. Group information together. This is shown by nested tags. For example the body tag indicates that everything between the opening body tag and closing body tag is part of the visible web site. 
+
+The div and span tag have no effect on the layout until they are styled by css. This is useful for grouping content together or selecting a specific piece of content without having to worry about overriding default styles.
+
+### Div tag
+
+A `<div>` tag is a block element which means by default it takes up the full width of the page. But this can be changed using css.
+
+This example shows using div tags to group the content into 2 columns. Then css is used to add the style that makes the content appear in 2 columns. The html tag is providing the semantic information 'this content is in 2 columns' and the css what actually makes the content appear in 2 columns.
+
+<p data-height="264" data-theme-id="0" data-slug-hash="XEjpOG" data-default-tab="html,result" data-user="susiec20" data-embed-version="2" data-pen-title="Basic usecase for divs" class="codepen">See the Pen <a href="https://codepen.io/susiec20/pen/XEjpOG/">Basic usecase for divs</a> by Susie (<a href="https://codepen.io/susiec20">@susiec20</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+### Span tag
+A `<span>` tag is an inline element which means it only occupies the space bounded by the tag rather than taking up the full width of the page.
+
+This example shows how to use a span tag to apply a style to specific part of the paragraph.
+
+<p data-height="207" data-theme-id="0" data-slug-hash="gewmgX" data-default-tab="html,result" data-user="susiec20" data-embed-version="2" data-pen-title="Basic span example" class="codepen">See the Pen <a href="https://codepen.io/susiec20/pen/gewmgX/">Basic span example</a> by Susie (<a href="https://codepen.io/susiec20">@susiec20</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+#TODO diagram of inline vs block element
