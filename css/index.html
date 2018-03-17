@@ -127,13 +127,121 @@
     
         <li class="first-level active"><a href="#css">CSS</a></li>
         
+            <li class="second-level"><a href="#css-syntax">CSS Syntax</a></li>
+            
+        
+            <li class="second-level"><a href="#selectors">Selectors</a></li>
+            
+                <li class="third-level"><a href="#element-selectors">Element Selectors</a></li>
+            
+                <li class="third-level"><a href="#class-selectors">Class Selectors</a></li>
+            
+                <li class="third-level"><a href="#id-selectors">ID Selectors</a></li>
+            
+        
+            <li class="second-level"><a href="#pseudo-classes">Pseudo Classes</a></li>
+            
+        
+            <li class="second-level"><a href="#properties">Properties</a></li>
+            
+        
+            <li class="second-level"><a href="#cascading-styles">Cascading Styles</a></li>
+            
+                <li class="third-level"><a href="#inheritance">Inheritance</a></li>
+            
+        
+    
+        <li class="first-level "><a href="#todo-box-model">TODO Box Model</a></li>
+        
+            <li class="second-level"><a href="#colour-names">Colour Names</a></li>
+            
+        
+            <li class="second-level"><a href="#applying-css-to-html">Applying CSS to HTML</a></li>
+            
+        
     
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
 <h1 id="css">CSS</h1>
-<p>CSS stands for cascading style sheets. It is used to change the appearance of a website.</p></div>
+<p>CSS stands for cascading style sheets. It is used to describe how a html document should look. In web development typically this means how it will look on the screen but it could also mean how it will look on paper. CSS is a style sheet language (as opposed to a mark up language or programming language). Using CSS styles can be applied to elements on the page.</p>
+<h2 id="css-syntax">CSS Syntax</h2>
+<p>CSS styles are applied to elements they have the following syntax:</p>
+<pre><code class="css">h1 {
+    color: #ff0000;
+}
+</code></pre>
+
+<p>The entire block is called the rule set. This is made up of the selector (in this case <code>h1</code>) and the declaration (in this case <code>color: #ff0000</code>). The declaration has 2 parts, the property (<code>color</code>) and the property value (<code>#ff0000</code>). The selector can have multiple properties e.g.</p>
+<pre><code class="css">p {
+    color: #ff00ff;
+    font-size; 10px;
+}
+</code></pre>
+
+<h2 id="selectors">Selectors</h2>
+<p>The selectors determine what part of the page the declarations will be applied to.</p>
+<h3 id="element-selectors">Element Selectors</h3>
+<p>This is when a style is applied to every element of a certain type. In the example below there are <code>h1</code>, <code>p</code> and <code>span</code> tags and the selectors in the CSS have the same names as the tags they are applied to</p>
+<p data-height="432" data-theme-id="0" data-slug-hash="PRGxaG" data-default-tab="html,result" data-user="susiec20" data-embed-version="2" data-pen-title="PRGxaG" class="codepen">See the Pen <a href="https://codepen.io/susiec20/pen/PRGxaG/">PRGxaG</a> by Susie (<a href="https://codepen.io/susiec20">@susiec20</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<h3 id="class-selectors">Class Selectors</h3>
+<p>Class selectors must always have a <code>.</code> at the start of their name when declared in the CSS. They can have any name provided it has no spaces. To apply the class to an element use the syntax <code>class=className</code>. In the example below the class <code>blue-text</code> is applied to a <code>span</code> tag and a <code>h1</code> tag. Any element with the class on it will have the declarations for that class appiled to it e.g. turning the text blue.</p>
+<p data-height="428" data-theme-id="0" data-slug-hash="LdRXXw" data-default-tab="html,result" data-user="susiec20" data-embed-version="2" data-pen-title="Class Selectors" class="codepen">See the Pen <a href="https://codepen.io/susiec20/pen/LdRXXw/">Class Selectors</a> by Susie (<a href="https://codepen.io/susiec20">@susiec20</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<h3 id="id-selectors">ID Selectors</h3>
+<p>ID selectors always start with a <code>#</code> when declared in the CSS and can have any name provided it has no spaces. An ID can only be applied to one element and allow you to uniquely identify a single element on the page.</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="KogbNG" data-default-tab="html,result" data-user="susiec20" data-embed-version="2" data-pen-title="ID Selector" class="codepen">See the Pen <a href="https://codepen.io/susiec20/pen/KogbNG/">ID Selector</a> by Susie (<a href="https://codepen.io/susiec20">@susiec20</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<h2 id="pseudo-classes">Pseudo Classes</h2>
+<p>Pseudo classes are added to the end of selectors to indicate that you only want the style applied on that selector when the element is in a certain state e.g. when the element is hovered over. The syntax is <code>selectorName:pseudoClass</code>. In the example below the paragraph text changes size when you hover over it.</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="QmKzgV" data-default-tab="html,result" data-user="susiec20" data-embed-version="2" data-pen-title="QmKzgV" class="codepen">See the Pen <a href="https://codepen.io/susiec20/pen/QmKzgV/">QmKzgV</a> by Susie (<a href="https://codepen.io/susiec20">@susiec20</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<h2 id="properties">Properties</h2>
+<p>There is a finite list of CSS properties that can be set on elements. Common CSS properties are available <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference">here</a>.</p>
+<h2 id="cascading-styles">Cascading Styles</h2>
+<h3 id="inheritance">Inheritance</h3>
+<p>In CSS, inheritance controls what happens when property is set for a specific element. The the example below <code>color</code> is an inherited property. This is why the text in the span tag is red as well despite the colour of the text in the span tag never being specifically set. <code>border</code> is not an inherited property only the paragraph has a border around it. The text in the span tag does not have a border around it. </p>
+<p data-height="152" data-theme-id="0" data-slug-hash="LdRamo" data-default-tab="html,result" data-user="susiec20" data-embed-version="2" data-pen-title="CSS Inheritance" class="codepen">See the Pen <a href="https://codepen.io/susiec20/pen/LdRamo/">CSS Inheritance</a> by Susie (<a href="https://codepen.io/susiec20">@susiec20</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<p>Inherited styles explain why the style of your web page can change even when a style has not been applied directly to an element. These styles can be overridden by more specific styles as shown in the example below.</p>
+<p data-height="227" data-theme-id="0" data-slug-hash="BrLbGW" data-default-tab="css,result" data-user="susiec20" data-embed-version="2" data-pen-title="Override styles" class="codepen">See the Pen <a href="https://codepen.io/susiec20/pen/BrLbGW/">Override styles</a> by Susie (<a href="https://codepen.io/susiec20">@susiec20</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<p>If multiple styles are added with the same level of importance, for example definining multiple rule sets with the same selector, the declration that is further down the document will be applied. As shown in this example:</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="yKawGj" data-default-tab="css,result" data-user="susiec20" data-embed-version="2" data-pen-title="Identical styles" class="codepen">See the Pen <a href="https://codepen.io/susiec20/pen/yKawGj/">Identical styles</a> by Susie (<a href="https://codepen.io/susiec20">@susiec20</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<p>Only conflicting rules are overridden. So in this case the background colour is applied from the first rule set but the value for the color property is overridden by the property further down the CSS document.</p>
+<h1 id="todo-box-model">TODO Box Model</h1>
+<h2 id="colour-names">Colour Names</h2>
+<p>Colours in CSS are usually written as <a href="http://www.mathsisfun.com/hexadecimals.html">hexidecimal numbers</a>. This <a href="https://htmlcolorcodes.com/">website</a> provides a tool to get a colour's hexidecimal value.</p>
+<h2 id="applying-css-to-html">Applying CSS to HTML</h2>
+<p>Typically CSS is written in a different file to the HTML. This is known as an external stylesheet. In order for the styles in the css file to be applied to the html the css file needs to be linked to the html document. Imagine you have created 2 files in the same directory (or folder) on your computer one called style.css and one called index.html. To link them together a <code>&lt;link&gt;</code> tag nested within in the <code>&lt;head&gt;</code> tag is used. This is done within the head tag as linking to a style sheet is information about the webpage (metadata) as opposed to information that should appear on the webpage.</p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>Styles can also be applied using inline stylesheets and inline styles this article covers <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works">alternative approaches</a> in more detail.</p></div>
         
     </div>
 
