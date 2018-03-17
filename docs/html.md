@@ -53,7 +53,6 @@ This is a more complicated example including some more html tags.
 <html>
 	<head>
 		<title>Bees Website</title>
-		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<h1>Bees</h1>
