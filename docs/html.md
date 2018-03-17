@@ -42,9 +42,11 @@ This is a very basic HTML document.
 
 In a html document there is a top level tag (`<html>`) and then the other tags are nested within these tags. Between an opening and closing tag of the same type there can be text and there can be other html tags
 
-This means the structure of a webpage is like a tree. The `html` tag is the top level tag and it has 2 children `head` and `body`. The `head` tag will contain information about the page (sometimes called metadata) e.g. links to the css. The `body` tag contains the html for content that is visible on your site.
+This means the structure of a webpage is like a tree. 
 
-#TODO Tree diagram
+![](assets/BasicHTMLTree.jpg)
+
+The `html` tag is the top level tag and it has 2 children `head` and `body`. The `head` tag will contain information about the page (sometimes called metadata) e.g. links to the css. The `body` tag contains the html for content that is visible on your site.
 
 This is a more complicated example including some more html tags.
 
@@ -57,7 +59,13 @@ This is a more complicated example including some more html tags.
 	<body>
 		<h1>Bees</h1>
 		<p>Bees are flying insects closely related to wasps and ants, known for their role in pollination and, in the case of the best-known bee species, the European honey bee, for producing honey and beeswax. Bees are a monophyletic lineage within the superfamily Apoidea and are presently considered a clade, called Anthophila. There are nearly 20,000 known species of bees in seven recognized biological families. They are found on every continent except Antarctica, in every habitat on the planet that contains insect-pollinated flowering plants.</p>
-		<p>Some species including honey bees, bumblebees, and stingless bees live socially in colonies. Bees are adapted for feeding on nectar and pollen, the former primarily as an energy source and the latter primarily for protein and other nutrients. Most pollen is used as food for larvae. Bee pollination is important both ecologically and commercially; the decline in wild bees has increased the value of pollination by commercially managed hives of honey bees.</p>
+		<p>Bees are adapted for feeding on nectar and pollen, the former primarily as an energy source and the latter primarily for protein and other nutrients. Most pollen is used as food for larvae. Bee pollination is important both ecologically and commercially; the decline in wild bees has increased the value of pollination by commercially managed hives of honey bees.</p>
+		<h2>Bees that live in colonies</h2>
+		<ul>
+			<li>Honey Bees</li>
+			<li>Bumblebees</li>
+			<li>Stingless Bees</li>
+		</ul>
 		<img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Bee-apis.jpg" />
 	</body>
 </html>
@@ -66,6 +74,9 @@ This shows what the html looks like when rendered by a browser. By clicking on '
 
 <p data-height="628" data-theme-id="0" data-slug-hash="BYXEeO" data-default-tab="html,result" data-user="susiec20" data-embed-version="2" data-pen-title="Basic HTML Elements" class="codepen">See the Pen <a href="https://codepen.io/susiec20/pen/BYXEeO/">Basic HTML Elements</a> by Susie (<a href="https://codepen.io/susiec20">@susiec20</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+The tree for this document:
+![](assets/HTMLTree.jpg)
 
 ## Div and Span Tag
 Tags do two things:
