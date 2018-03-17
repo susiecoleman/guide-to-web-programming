@@ -14,4 +14,6 @@ If a website is not loading correctly in the browser then the developer tools ca
 A very basic website containing a javascript, html and css file already linked together can be downloaded from [github](https://github.com/susiecoleman/blank-website).
 
 ## Codepen
-[Codepen](https://codepen.io/#) is a website that allows you to experiment with html css and javascript in the browser. There are multiple code examples in this guide that use codepen. To experiment with changing the code click `edit on codepen` in any of the examples. (Editing the examples on codepen will not affect the examples in the guide.)
+[Codepen](https://codepen.io/#) is a website that allows you to experiment with html css and javascript in the browser. There are multiple code examples in this guide that use codepen. To experiment with changing the code click `edit on codepen` in any of the examples. Editing the examples on codepen will not affect the examples in the guide. 
+
+Note: Codepen does not include head and body tags in it's examples so any code written would need to go inside the body tag if it was being added to a webpage.
