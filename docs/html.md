@@ -42,7 +42,7 @@ This is a very basic HTML document.
 
 In a html document there is a top level tag (`<html>`) and then the other tags are nested within these tags. Between an opening and closing tag of the same type there can be text and there can be other html tags
 
-This means the structure of a webpage is like a tree. The `html` tag is the top level tag and it has 2 children `head` and `body`. The `head` tag has metadata about the page e.g. links to the css and the `body` tag contains the html for content that will appear on your site.
+This means the structure of a webpage is like a tree. The `html` tag is the top level tag and it has 2 children `head` and `body`. The `head` tag will contain information about the page (sometimes called metadata) e.g. links to the css. The `body` tag contains the html for content that is visible on your site.
 
 #TODO Tree diagram
 
