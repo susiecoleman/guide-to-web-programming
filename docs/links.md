@@ -18,3 +18,5 @@
 [Full list of CSS properties](https://www.w3.org/Style/CSS/all-properties.en.html)
 
 [Inheritance](https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance)
+
+[CSS Box Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)

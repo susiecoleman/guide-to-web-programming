@@ -75,6 +75,8 @@ Only conflicting rules are overridden. So in this case the background colour is 
 
 A web page is rendered by the browser as a series of boxes. CSS is used to determine the size, postition and properties (colour, border size, etc) of the box. Every box is made up of 4 parts:
 
+![CSS Box Model](./assets/CSSBoxModel.jpg)
+
 * Content: This is the actual content of the element, text, an image etc. The size is set using the properties `width` ans `height`.
 * Padding: This goes around the content area. The dimensions are set using `padding-top`, `padding-bottom`, `padding-right` and `padding-left`. This [guide](https://developer.mozilla.org/en-US/docs/Web/CSS/padding) covers how to use the `padding` property as shorthand to set all 4 padding values.
 * Border: The border goes around the padding area. The width of the border is set using `border-width` and the area. The `border-style` property makes the border visible. This [guide](https://developer.mozilla.org/en-US/docs/Web/CSS/border) covers how to use the `border` property to set multiple border properties at once.
