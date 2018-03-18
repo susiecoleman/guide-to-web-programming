@@ -71,7 +71,19 @@ If multiple styles are added with the same level of importance, for example defi
 
 Only conflicting rules are overridden. So in this case the background colour is applied from the first rule set but the value for the color property is overridden by the property further down the CSS document.
 
-#TODO Box Model
+#Positioning Items on the Page - Box Model
+
+A web page is rendered by the browser as a series of boxes. CSS is used to determine the size, postition and properties (colour, border size, etc) of the box. Every box is made up of 4 parts:
+
+* Content: This is the actual content of the element, text, an image etc. The size is set using the properties `width` ans `height`.
+* Padding: This goes around the content area. The dimensions are set using `padding-top`, `padding-bottom`, `padding-right` and `padding-left`. This [guide](https://developer.mozilla.org/en-US/docs/Web/CSS/padding) covers how to use the `padding` property as shorthand to set all 4 padding values.
+* Border: The border goes around the padding area. The width of the border is set using `border-width` and the area. The `border-style` property makes the border visible. This [guide](https://developer.mozilla.org/en-US/docs/Web/CSS/border) covers how to use the `border` property to set multiple border properties at once.
+* Margin: The margin is around the border and separates the element from it's nieghbours. The size is set using `margin-top`, `margin-right`, `margin-bottom`, `margin-left`. This [guide](https://developer.mozilla.org/en-US/docs/Web/CSS/margin) covers how to use the `margin` property as shorthand to set all 4 padding margin.
+
+<p data-height="482" data-theme-id="0" data-slug-hash="MVbjMN" data-default-tab="css,result" data-user="susiec20" data-embed-version="2" data-pen-title="Box Model CSS" class="codepen">See the Pen <a href="https://codepen.io/susiec20/pen/MVbjMN/">Box Model CSS</a> by Susie (<a href="https://codepen.io/susiec20">@susiec20</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+Padding seperates content from the border and the margin add space between the element in relation to other elements.
 
 ## Colour Names
 
