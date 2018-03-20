@@ -1,21 +1,45 @@
 # Javascript
 
+Programming language
+
 # TODO Console.log
 
-<a class="jsbin-embed" href="https://jsbin.com/lukeraz/1/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.3"></script>
+```javascript
+console.log("This is a console log.")
+```
 
 # TODO Variables
+Cover const and let as a side note
+reassigning variable names
+
+```javascript
+var name = "Susie"
+var height = 171
+
+name = "Anna"
+```
+
+# TODO Types
+Numbers, strings, booleans
+
+
+# TODO Arrays
+Index starts from zero
+```javascript
+var countries = []
+var countries = ["UK", "US", "AUS"]
+var country = countries[0]
+
+```
+
+# TODO Boolean logic and if statements
+Comparitors
+Flow of controls
 
 # TODO Incrementing numbers
 
-# TODO Types
-
-# TODO Arrays
-
-# TODO Boolean logic and if statements
-
 # TODO For loops
-
-# TODO Functions
+A basic for loop
+A for loop and an array
 
 # TODO Applying Javascript to HTML
