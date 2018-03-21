@@ -69,14 +69,44 @@ console.log(x);
 The value printed out will be 5
 
 
-# TODO Arrays
-Index starts from zero
-```javascript
-var countries = []
-var countries = ["UK", "US", "AUS"]
-var country = countries[0]
+## Arrays
 
+An array is a list of items. For example
+```javascript
+[1,2,3];
+[];
+["apple", "banana", "cherry"];
+[4, "cat", true];
 ```
+are all arrays. But typically they are assigned to a variable
+
+```javascript
+var shoppingList = ["apple", "banana", "cherry"];
+```
+
+There are multiple operations that can be performed on an array. It is possible to get a specific item from an array by it's index:
+
+```javascript
+var shoppingList = ["apple", "banana", "cherry"];
+var firstItem = shoppingList[0];
+```
+
+Note the index of an array start from zero. It is also possible to get the number of items in a list:
+
+```javascript
+var shoppingList = ["apple", "banana", "cherry"];
+var length = shoppingList.length;
+```
+
+and add an item to the end of the list:
+
+```javascript
+var shoppingList = ["apple", "banana", "cherry"];
+shoppingList.push("dates");
+```
+[Interactive version of all array examples](https://jsbin.com/fezetam/edit?js,console)
+
+[Full guide on arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 # TODO Boolean logic and if statements
 Comparitors
