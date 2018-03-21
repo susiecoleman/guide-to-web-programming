@@ -127,17 +127,19 @@
     
         <li class="first-level active"><a href="#javascript">Javascript</a></li>
         
-    
-        <li class="first-level "><a href="#todo-consolelog">TODO Console.log</a></li>
+            <li class="second-level"><a href="#jsbin">JSBin</a></li>
+            
         
-    
-        <li class="first-level "><a href="#todo-variables">TODO Variables</a></li>
+            <li class="second-level"><a href="#debugging-consolelog">Debugging - Console.log</a></li>
+            
         
-    
-        <li class="first-level "><a href="#todo-incrementing-numbers">TODO Incrementing numbers</a></li>
+            <li class="second-level"><a href="#variables">Variables</a></li>
+            
         
-    
-        <li class="first-level "><a href="#todo-types">TODO Types</a></li>
+            <li class="second-level"><a href="#types">Types</a></li>
+            
+                <li class="third-level"><a href="#comments">Comments</a></li>
+            
         
     
         <li class="first-level "><a href="#todo-arrays">TODO Arrays</a></li>
@@ -146,10 +148,10 @@
         <li class="first-level "><a href="#todo-boolean-logic-and-if-statements">TODO Boolean logic and if statements</a></li>
         
     
-        <li class="first-level "><a href="#todo-for-loops">TODO For loops</a></li>
+        <li class="first-level "><a href="#todo-incrementing-numbers">TODO Incrementing numbers</a></li>
         
     
-        <li class="first-level "><a href="#todo-functions">TODO Functions</a></li>
+        <li class="first-level "><a href="#todo-for-loops">TODO For loops</a></li>
         
     
         <li class="first-level "><a href="#todo-applying-javascript-to-html">TODO Applying Javascript to HTML</a></li>
@@ -160,14 +162,77 @@
         <div class="col-md-9" role="main">
 
 <h1 id="javascript">Javascript</h1>
-<h1 id="todo-consolelog">TODO Console.log</h1>
-<h1 id="todo-variables">TODO Variables</h1>
-<h1 id="todo-incrementing-numbers">TODO Incrementing numbers</h1>
-<h1 id="todo-types">TODO Types</h1>
+<p>Javascript is a programming language and can be used to make a website interactive. It is used in front end web development but it is very versitile so it can also be used in back end development. The concepts covered are applicable to other programming languages.</p>
+<p>Javascript is a series of instructions each instruction ends with a semicolon and the instructions are executed in the order they are written in the file.</p>
+<h2 id="jsbin">JSBin</h2>
+<p><a href="https://jsbin.com/?js,console">JSBin</a> is an online service that allows you to test out javascript. Javascript goes in the left hand pane then just click run to see the results. However to get anything to print out you will need to use <code>console.log()</code>. There are links to interactive examples of all the javascript code in this guide.</p>
+<h2 id="debugging-consolelog">Debugging - Console.log</h2>
+<p>The <code>console.log</code> command outputs a message to the <a href="https://developer.mozilla.org/en-US/docs/Tools/Web_Console">web console</a>. This is useful for finding out what is going wrong with a program, for example logging the value of a variable.</p>
+<pre><code class="javascript">console.log(&quot;This is a console log.&quot;);
+</code></pre>
+
+<p><a href="https://jsbin.com/lukeraz/edit?js,console">Interactive Version</a></p>
+<h2 id="variables">Variables</h2>
+<p>Variables are used to assign names to values. For example the number <code>200</code> could refer to anything but if it is assigned to a variable <code>var heightInCm = 200</code> it has a meaning. Variables can be reassigned to new values e.g.</p>
+<pre><code class="javascript">var heightInCm = 200;
+heightInCm = 151;
+</code></pre>
+
+<p>In these examples <code>var</code> is used to create a variable. Javascript also has <code>const</code> and <code>let</code> for declaring variables but they work slightly differently. The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types">declarations</a> part of this guide covers the differences.</p>
+<pre><code class="javascript">var name;
+name = &quot;Susie&quot;;
+var height = 171;
+
+name = &quot;Anna&quot;;
+</code></pre>
+
+<p><a href="https://jsbin.com/fofajak/edit?js,console">Interactive Version</a></p>
+<h2 id="types">Types</h2>
+<ul>
+<li>Boolean - This type can have only 2 values <code>true</code> or <code>false</code></li>
+<li>Number - These can be whole numbers (integers) or decimals (floating point numbers)</li>
+<li>Strings - A sequence of characters surrounded by quotes</li>
+</ul>
+<pre><code class="javascript">// Boolean values
+var skyIsBlue = true;
+var earthIsFlat = false;
+
+// Integers
+var total = 35;
+
+// Floating point numbers
+var pi = 3.14;
+
+// Strings
+var capitalCity = &quot;London&quot;;
+var meaningOfLife = &quot;42&quot;;
+var punctuation = &quot;@£$`!!{}&quot;;
+</code></pre>
+
+<p><a href="https://jsbin.com/ruqiros/edit?js,console">Interactive Version</a></p>
+<h3 id="comments">Comments</h3>
+<p><code>//</code> In a javascript file denotes a comment. Any line that starts with <code>//</code> The browser will ignore. So in this example</p>
+<pre><code class="javascript">var x = 5;
+// x = 6;
+console.log(x);
+</code></pre>
+
+<p>The value printed out will be 5</p>
 <h1 id="todo-arrays">TODO Arrays</h1>
+<p>Index starts from zero</p>
+<pre><code class="javascript">var countries = []
+var countries = [&quot;UK&quot;, &quot;US&quot;, &quot;AUS&quot;]
+var country = countries[0]
+
+</code></pre>
+
 <h1 id="todo-boolean-logic-and-if-statements">TODO Boolean logic and if statements</h1>
+<p>Comparitors
+Flow of controls</p>
+<h1 id="todo-incrementing-numbers">TODO Incrementing numbers</h1>
 <h1 id="todo-for-loops">TODO For loops</h1>
-<h1 id="todo-functions">TODO Functions</h1>
+<p>A basic for loop
+A for loop and an array</p>
 <h1 id="todo-applying-javascript-to-html">TODO Applying Javascript to HTML</h1></div>
         
     </div>

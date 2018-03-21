@@ -72,7 +72,7 @@
         }, 
         {
             "location": "/css/", 
-            "text": "CSS\n\n\nCSS stands for cascading style sheets. It is used to describe how a html document should look. In web development typically this means how it will look on the screen but it could also mean how it will look on paper. CSS is a style sheet language (as opposed to a mark up language or programming language). Using CSS styles can be applied to elements on the page.\n\n\nCSS Syntax\n\n\nCSS styles are applied to elements they have the following syntax:\n\n\nh1 {\n    color: #ff0000;\n}\n\n\n\n\nThe entire block is called the rule set. This is made up of the selector (in this case \nh1\n) and the declaration (in this case \ncolor: #ff0000\n). The declaration has 2 parts, the property (\ncolor\n) and the property value (\n#ff0000\n). The selector can have multiple properties e.g.\n\n\np {\n    color: #ff00ff;\n    font-size; 10px;\n}\n\n\n\n\nSelectors\n\n\nThe selectors determine what part of the page the declarations will be applied to.\n\n\nElement Selectors\n\n\nThis is when a style is applied to every element of a certain type. In the example below there are \nh1\n, \np\n and \nspan\n tags and the selectors in the CSS have the same names as the tags they are applied to\n\n\nSee the Pen \nPRGxaG\n by Susie (\n@susiec20\n) on \nCodePen\n.\n\n\n\n\n\n\nClass Selectors\n\n\nClass selectors must always have a \n.\n at the start of their name when declared in the CSS. They can have any name provided it has no spaces. To apply the class to an element use the syntax \nclass=className\n. In the example below the class \nblue-text\n is applied to a \nspan\n tag and a \nh1\n tag. Any element with the class on it will have the declarations for that class appiled to it e.g. turning the text blue.\n\n\nSee the Pen \nClass Selectors\n by Susie (\n@susiec20\n) on \nCodePen\n.\n\n\n\n\n\n\nID Selectors\n\n\nID selectors always start with a \n#\n when declared in the CSS and can have any name provided it has no spaces. An ID can only be applied to one element and allow you to uniquely identify a single element on the page.\n\n\nSee the Pen \nID Selector\n by Susie (\n@susiec20\n) on \nCodePen\n.\n\n\n\n\n\n\nPseudo Classes\n\n\nPseudo classes are added to the end of selectors to indicate that you only want the style applied on that selector when the element is in a certain state e.g. when the element is hovered over. The syntax is \nselectorName:pseudoClass\n. In the example below the paragraph text changes size when you hover over it.\n\n\nSee the Pen \nQmKzgV\n by Susie (\n@susiec20\n) on \nCodePen\n.\n\n\n\n\n\n\nProperties\n\n\nThere is a finite list of CSS properties that can be set on elements. Common CSS properties are available \nhere\n.\n\n\nCascading Styles\n\n\nInheritance\n\n\nIn CSS, inheritance controls what happens when property is set for a specific element. The the example below \ncolor\n is an inherited property. This is why the text in the span tag is red as well despite the colour of the text in the span tag never being specifically set. \nborder\n is not an inherited property only the paragraph has a border around it. The text in the span tag does not have a border around it. \n\n\nSee the Pen \nCSS Inheritance\n by Susie (\n@susiec20\n) on \nCodePen\n.\n\n\n\n\n\n\nInherited styles explain why the style of your web page can change even when a style has not been applied directly to an element. These styles can be overridden by more specific styles as shown in the example below.\n\n\nSee the Pen \nOverride styles\n by Susie (\n@susiec20\n) on \nCodePen\n.\n\n\n\n\n\n\nIf multiple styles are added with the same level of importance, for example definining multiple rule sets with the same selector, the declration that is further down the document will be applied. As shown in this example:\n\n\nSee the Pen \nIdentical styles\n by Susie (\n@susiec20\n) on \nCodePen\n.\n\n\n\n\n\n\nOnly conflicting rules are overridden. So in this case the background colour is applied from the first rule set but the value for the color property is overridden by the property further down the CSS document.\n\n\nTODO Box Model\n\n\nColour Names\n\n\nColours in CSS are usually written as \nhexidecimal numbers\n. This \nwebsite\n provides a tool to get a colour's hexidecimal value.\n\n\nApplying CSS to HTML\n\n\nTypically CSS is written in a different file to the HTML. This is known as an external stylesheet. In order for the styles in the css file to be applied to the html the css file needs to be linked to the html document. Imagine you have created 2 files in the same directory (or folder) on your computer one called style.css and one called index.html. To link them together a \nlink\n tag nested within in the \nhead\n tag is used. This is done within the head tag as linking to a style sheet is information about the webpage (metadata) as opposed to information that should appear on the webpage.\n\n\n!DOCTYPE html\n\n\nhtml\n\n    \nhead\n\n        \nlink rel=\nstylesheet\n href=\nstyle.css\n\n    \n/head\n\n    \nbody\n\n    \n/body\n\n\n/html\n\n\n\n\n\nStyles can also be applied using inline stylesheets and inline styles this article covers \nalternative approaches\n in more detail.", 
+            "text": "CSS\n\n\nCSS stands for cascading style sheets. It is used to describe how a html document should look. In web development typically this means how it will look on the screen but it could also mean how it will look on paper. CSS is a style sheet language (as opposed to a mark up language or programming language). Using CSS styles can be applied to elements on the page.\n\n\nCSS Syntax\n\n\nCSS styles are applied to elements they have the following syntax:\n\n\nh1 {\n    color: #ff0000;\n}\n\n\n\n\nThe entire block is called the rule set. This is made up of the selector (in this case \nh1\n) and the declaration (in this case \ncolor: #ff0000\n). The declaration has 2 parts, the property (\ncolor\n) and the property value (\n#ff0000\n). The selector can have multiple properties e.g.\n\n\np {\n    color: #ff00ff;\n    font-size; 10px;\n}\n\n\n\n\nSelectors\n\n\nThe selectors determine what part of the page the declarations will be applied to.\n\n\nElement Selectors\n\n\nThis is when a style is applied to every element of a certain type. In the example below there are \nh1\n, \np\n and \nspan\n tags and the selectors in the CSS have the same names as the tags they are applied to\n\n\nSee the Pen \nPRGxaG\n by Susie (\n@susiec20\n) on \nCodePen\n.\n\n\n\n\n\n\nClass Selectors\n\n\nClass selectors must always have a \n.\n at the start of their name when declared in the CSS. They can have any name provided it has no spaces. To apply the class to an element use the syntax \nclass=className\n. In the example below the class \nblue-text\n is applied to a \nspan\n tag and a \nh1\n tag. Any element with the class on it will have the declarations for that class appiled to it e.g. turning the text blue.\n\n\nSee the Pen \nClass Selectors\n by Susie (\n@susiec20\n) on \nCodePen\n.\n\n\n\n\n\n\nID Selectors\n\n\nID selectors always start with a \n#\n when declared in the CSS and can have any name provided it has no spaces. An ID can only be applied to one element and allow you to uniquely identify a single element on the page.\n\n\nSee the Pen \nID Selector\n by Susie (\n@susiec20\n) on \nCodePen\n.\n\n\n\n\n\n\nPseudo Classes\n\n\nPseudo classes are added to the end of selectors to indicate that you only want the style applied on that selector when the element is in a certain state e.g. when the element is hovered over. The syntax is \nselectorName:pseudoClass\n. In the example below the paragraph text changes size when you hover over it.\n\n\nSee the Pen \nQmKzgV\n by Susie (\n@susiec20\n) on \nCodePen\n.\n\n\n\n\n\n\nProperties\n\n\nThere is a finite list of CSS properties that can be set on elements. Common CSS properties are available \nhere\n.\n\n\nCascading Styles\n\n\nInheritance\n\n\nIn CSS, inheritance controls what happens when property is set for a specific element. The the example below \ncolor\n is an inherited property. This is why the text in the span tag is red as well despite the colour of the text in the span tag never being specifically set. \nborder\n is not an inherited property only the paragraph has a border around it. The text in the span tag does not have a border around it. \n\n\nSee the Pen \nCSS Inheritance\n by Susie (\n@susiec20\n) on \nCodePen\n.\n\n\n\n\n\n\nInherited styles explain why the style of your web page can change even when a style has not been applied directly to an element. These styles can be overridden by more specific styles as shown in the example below.\n\n\nSee the Pen \nOverride styles\n by Susie (\n@susiec20\n) on \nCodePen\n.\n\n\n\n\n\n\nIf multiple styles are added with the same level of importance, for example definining multiple rule sets with the same selector, the declration that is further down the document will be applied. As shown in this example:\n\n\nSee the Pen \nIdentical styles\n by Susie (\n@susiec20\n) on \nCodePen\n.\n\n\n\n\n\n\nOnly conflicting rules are overridden. So in this case the background colour is applied from the first rule set but the value for the color property is overridden by the property further down the CSS document.\n\n\nPositioning Items on the Page - Box Model\n\n\nA web page is rendered by the browser as a series of boxes. CSS is used to determine the size, postition and properties (colour, border size, etc) of the box. Every box is made up of 4 parts:\n\n\n\n\n\n\nContent: This is the actual content of the element, text, an image etc. The size is set using the properties \nwidth\n ans \nheight\n.\n\n\nPadding: This goes around the content area. The dimensions are set using \npadding-top\n, \npadding-bottom\n, \npadding-right\n and \npadding-left\n. This \nguide\n covers how to use the \npadding\n property as shorthand to set all 4 padding values.\n\n\nBorder: The border goes around the padding area. The width of the border is set using \nborder-width\n and the area. The \nborder-style\n property makes the border visible. This \nguide\n covers how to use the \nborder\n property to set multiple border properties at once.\n\n\nMargin: The margin is around the border and separates the element from it's nieghbours. The size is set using \nmargin-top\n, \nmargin-right\n, \nmargin-bottom\n, \nmargin-left\n. This \nguide\n covers how to use the \nmargin\n property as shorthand to set all 4 padding margin.\n\n\n\n\nSee the Pen \nBox Model CSS\n by Susie (\n@susiec20\n) on \nCodePen\n.\n\n\n\n\n\n\nPadding seperates content from the border and the margin add space between the element in relation to other elements.\n\n\nColour Names\n\n\nColours in CSS are usually written as \nhexidecimal numbers\n. This \nwebsite\n provides a tool to get a colour's hexidecimal value.\n\n\nApplying CSS to HTML\n\n\nTypically CSS is written in a different file to the HTML. This is known as an external stylesheet. In order for the styles in the css file to be applied to the html the css file needs to be linked to the html document. Imagine you have created 2 files in the same directory (or folder) on your computer one called style.css and one called index.html. To link them together a \nlink\n tag nested within in the \nhead\n tag is used. This is done within the head tag as linking to a style sheet is information about the webpage (metadata) as opposed to information that should appear on the webpage.\n\n\n!DOCTYPE html\n\n\nhtml\n\n    \nhead\n\n        \nlink rel=\nstylesheet\n href=\nstyle.css\n\n    \n/head\n\n    \nbody\n\n    \n/body\n\n\n/html\n\n\n\n\n\nStyles can also be applied using inline stylesheets and inline styles this article covers \nalternative approaches\n in more detail.", 
             "title": "CSS"
         }, 
         {
@@ -126,9 +126,9 @@
             "title": "Inheritance"
         }, 
         {
-            "location": "/css/#todo-box-model", 
-            "text": "", 
-            "title": "TODO Box Model"
+            "location": "/css/#positioning-items-on-the-page-box-model", 
+            "text": "A web page is rendered by the browser as a series of boxes. CSS is used to determine the size, postition and properties (colour, border size, etc) of the box. Every box is made up of 4 parts:    Content: This is the actual content of the element, text, an image etc. The size is set using the properties  width  ans  height .  Padding: This goes around the content area. The dimensions are set using  padding-top ,  padding-bottom ,  padding-right  and  padding-left . This  guide  covers how to use the  padding  property as shorthand to set all 4 padding values.  Border: The border goes around the padding area. The width of the border is set using  border-width  and the area. The  border-style  property makes the border visible. This  guide  covers how to use the  border  property to set multiple border properties at once.  Margin: The margin is around the border and separates the element from it's nieghbours. The size is set using  margin-top ,  margin-right ,  margin-bottom ,  margin-left . This  guide  covers how to use the  margin  property as shorthand to set all 4 padding margin.   See the Pen  Box Model CSS  by Susie ( @susiec20 ) on  CodePen .   Padding seperates content from the border and the margin add space between the element in relation to other elements.", 
+            "title": "Positioning Items on the Page - Box Model"
         }, 
         {
             "location": "/css/#colour-names", 
@@ -142,23 +142,48 @@
         }, 
         {
             "location": "/javascript/", 
-            "text": "Javascript\n\n\nTODO Console.log\n\n\nTODO Variables\n\n\nTODO Incrementing numbers\n\n\nTODO Types\n\n\nTODO Arrays\n\n\nTODO Boolean logic and if statements\n\n\nTODO For loops\n\n\nTODO Functions\n\n\nTODO Applying Javascript to HTML", 
+            "text": "Javascript\n\n\nJavascript is a programming language and can be used to make a website interactive. It is used in front end web development but it is very versitile so it can also be used in back end development. The concepts covered are applicable to other programming languages.\n\n\nJavascript is a series of instructions each instruction ends with a semicolon and the instructions are executed in the order they are written in the file.\n\n\nJSBin\n\n\nJSBin\n is an online service that allows you to test out javascript. Javascript goes in the left hand pane then just click run to see the results. However to get anything to print out you will need to use \nconsole.log()\n. There are links to interactive examples of all the javascript code in this guide.\n\n\nDebugging - Console.log\n\n\nThe \nconsole.log\n command outputs a message to the \nweb console\n. This is useful for finding out what is going wrong with a program, for example logging the value of a variable.\n\n\nconsole.log(\nThis is a console log.\n);\n\n\n\n\nInteractive Version\n\n\nVariables\n\n\nVariables are used to assign names to values. For example the number \n200\n could refer to anything but if it is assigned to a variable \nvar heightInCm = 200\n it has a meaning. Variables can be reassigned to new values e.g.\n\n\nvar heightInCm = 200;\nheightInCm = 151;\n\n\n\n\nIn these examples \nvar\n is used to create a variable. Javascript also has \nconst\n and \nlet\n for declaring variables but they work slightly differently. The \ndeclarations\n part of this guide covers the differences.\n\n\nvar name;\nname = \nSusie\n;\nvar height = 171;\n\nname = \nAnna\n;\n\n\n\n\nInteractive Version\n\n\nTypes\n\n\n\n\nBoolean - This type can have only 2 values \ntrue\n or \nfalse\n\n\nNumber - These can be whole numbers (integers) or decimals (floating point numbers)\n\n\nStrings - A sequence of characters surrounded by quotes\n\n\n\n\n// Boolean values\nvar skyIsBlue = true;\nvar earthIsFlat = false;\n\n// Integers\nvar total = 35;\n\n// Floating point numbers\nvar pi = 3.14;\n\n// Strings\nvar capitalCity = \nLondon\n;\nvar meaningOfLife = \n42\n;\nvar punctuation = \n@\u00a3$`!!{}\n;\n\n\n\n\nInteractive Version\n\n\nComments\n\n\n//\n In a javascript file denotes a comment. Any line that starts with \n//\n The browser will ignore. So in this example\n\n\nvar x = 5;\n// x = 6;\nconsole.log(x);\n\n\n\n\nThe value printed out will be 5\n\n\nTODO Arrays\n\n\nIndex starts from zero\n\n\nvar countries = []\nvar countries = [\nUK\n, \nUS\n, \nAUS\n]\nvar country = countries[0]\n\n\n\n\n\nTODO Boolean logic and if statements\n\n\nComparitors\nFlow of controls\n\n\nTODO Incrementing numbers\n\n\nTODO For loops\n\n\nA basic for loop\nA for loop and an array\n\n\nTODO Applying Javascript to HTML", 
             "title": "Javascript"
         }, 
         {
             "location": "/javascript/#javascript", 
-            "text": "", 
+            "text": "Javascript is a programming language and can be used to make a website interactive. It is used in front end web development but it is very versitile so it can also be used in back end development. The concepts covered are applicable to other programming languages.  Javascript is a series of instructions each instruction ends with a semicolon and the instructions are executed in the order they are written in the file.", 
             "title": "Javascript"
         }, 
         {
-            "location": "/javascript/#todo-consolelog", 
-            "text": "", 
-            "title": "TODO Console.log"
+            "location": "/javascript/#jsbin", 
+            "text": "JSBin  is an online service that allows you to test out javascript. Javascript goes in the left hand pane then just click run to see the results. However to get anything to print out you will need to use  console.log() . There are links to interactive examples of all the javascript code in this guide.", 
+            "title": "JSBin"
         }, 
         {
-            "location": "/javascript/#todo-variables", 
-            "text": "", 
-            "title": "TODO Variables"
+            "location": "/javascript/#debugging-consolelog", 
+            "text": "The  console.log  command outputs a message to the  web console . This is useful for finding out what is going wrong with a program, for example logging the value of a variable.  console.log( This is a console log. );  Interactive Version", 
+            "title": "Debugging - Console.log"
+        }, 
+        {
+            "location": "/javascript/#variables", 
+            "text": "Variables are used to assign names to values. For example the number  200  could refer to anything but if it is assigned to a variable  var heightInCm = 200  it has a meaning. Variables can be reassigned to new values e.g.  var heightInCm = 200;\nheightInCm = 151;  In these examples  var  is used to create a variable. Javascript also has  const  and  let  for declaring variables but they work slightly differently. The  declarations  part of this guide covers the differences.  var name;\nname =  Susie ;\nvar height = 171;\n\nname =  Anna ;  Interactive Version", 
+            "title": "Variables"
+        }, 
+        {
+            "location": "/javascript/#types", 
+            "text": "Boolean - This type can have only 2 values  true  or  false  Number - These can be whole numbers (integers) or decimals (floating point numbers)  Strings - A sequence of characters surrounded by quotes   // Boolean values\nvar skyIsBlue = true;\nvar earthIsFlat = false;\n\n// Integers\nvar total = 35;\n\n// Floating point numbers\nvar pi = 3.14;\n\n// Strings\nvar capitalCity =  London ;\nvar meaningOfLife =  42 ;\nvar punctuation =  @\u00a3$`!!{} ;  Interactive Version", 
+            "title": "Types"
+        }, 
+        {
+            "location": "/javascript/#comments", 
+            "text": "//  In a javascript file denotes a comment. Any line that starts with  //  The browser will ignore. So in this example  var x = 5;\n// x = 6;\nconsole.log(x);  The value printed out will be 5", 
+            "title": "Comments"
+        }, 
+        {
+            "location": "/javascript/#todo-arrays", 
+            "text": "Index starts from zero  var countries = []\nvar countries = [ UK ,  US ,  AUS ]\nvar country = countries[0]", 
+            "title": "TODO Arrays"
+        }, 
+        {
+            "location": "/javascript/#todo-boolean-logic-and-if-statements", 
+            "text": "Comparitors\nFlow of controls", 
+            "title": "TODO Boolean logic and if statements"
         }, 
         {
             "location": "/javascript/#todo-incrementing-numbers", 
@@ -166,29 +191,9 @@
             "title": "TODO Incrementing numbers"
         }, 
         {
-            "location": "/javascript/#todo-types", 
-            "text": "", 
-            "title": "TODO Types"
-        }, 
-        {
-            "location": "/javascript/#todo-arrays", 
-            "text": "", 
-            "title": "TODO Arrays"
-        }, 
-        {
-            "location": "/javascript/#todo-boolean-logic-and-if-statements", 
-            "text": "", 
-            "title": "TODO Boolean logic and if statements"
-        }, 
-        {
             "location": "/javascript/#todo-for-loops", 
-            "text": "", 
+            "text": "A basic for loop\nA for loop and an array", 
             "title": "TODO For loops"
-        }, 
-        {
-            "location": "/javascript/#todo-functions", 
-            "text": "", 
-            "title": "TODO Functions"
         }, 
         {
             "location": "/javascript/#todo-applying-javascript-to-html", 
@@ -197,7 +202,7 @@
         }, 
         {
             "location": "/links/", 
-            "text": "Links\n\n\nMDN Web Docs\n\n\nMDN web docs\n have loads of information on web development.\n\n\nHTML\n\n\nIntroduction to HTML\n\n\nHTML Elements List\n\n\nCSS\n\n\nIntroduction to CSS\n\n\nSelectors in depth\n\n\nCommon CSS properties\n\n\nFull list of CSS properties\n\n\nInheritance", 
+            "text": "Links\n\n\nMDN Web Docs\n\n\nMDN web docs\n have loads of information on web development.\n\n\nHTML\n\n\nIntroduction to HTML\n\n\nHTML Elements List\n\n\nCSS\n\n\nIntroduction to CSS\n\n\nSelectors in depth\n\n\nCommon CSS properties\n\n\nFull list of CSS properties\n\n\nInheritance\n\n\nCSS Box Model", 
             "title": "Useful Links"
         }, 
         {
@@ -217,7 +222,7 @@
         }, 
         {
             "location": "/links/#css", 
-            "text": "Introduction to CSS  Selectors in depth  Common CSS properties  Full list of CSS properties  Inheritance", 
+            "text": "Introduction to CSS  Selectors in depth  Common CSS properties  Full list of CSS properties  Inheritance  CSS Box Model", 
             "title": "CSS"
         }
     ]

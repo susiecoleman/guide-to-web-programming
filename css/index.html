@@ -151,7 +151,7 @@
             
         
     
-        <li class="first-level "><a href="#todo-box-model">TODO Box Model</a></li>
+        <li class="first-level "><a href="#positioning-items-on-the-page-box-model">Positioning Items on the Page - Box Model</a></li>
         
             <li class="second-level"><a href="#colour-names">Colour Names</a></li>
             
@@ -226,7 +226,20 @@
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 <p>Only conflicting rules are overridden. So in this case the background colour is applied from the first rule set but the value for the color property is overridden by the property further down the CSS document.</p>
-<h1 id="todo-box-model">TODO Box Model</h1>
+<h1 id="positioning-items-on-the-page-box-model">Positioning Items on the Page - Box Model</h1>
+<p>A web page is rendered by the browser as a series of boxes. CSS is used to determine the size, postition and properties (colour, border size, etc) of the box. Every box is made up of 4 parts:</p>
+<p><img alt="CSS Box Model" src="../assets/CSSBoxModel.jpg" /></p>
+<ul>
+<li>Content: This is the actual content of the element, text, an image etc. The size is set using the properties <code>width</code> ans <code>height</code>.</li>
+<li>Padding: This goes around the content area. The dimensions are set using <code>padding-top</code>, <code>padding-bottom</code>, <code>padding-right</code> and <code>padding-left</code>. This <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding">guide</a> covers how to use the <code>padding</code> property as shorthand to set all 4 padding values.</li>
+<li>Border: The border goes around the padding area. The width of the border is set using <code>border-width</code> and the area. The <code>border-style</code> property makes the border visible. This <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">guide</a> covers how to use the <code>border</code> property to set multiple border properties at once.</li>
+<li>Margin: The margin is around the border and separates the element from it's nieghbours. The size is set using <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, <code>margin-left</code>. This <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin">guide</a> covers how to use the <code>margin</code> property as shorthand to set all 4 padding margin.</li>
+</ul>
+<p data-height="482" data-theme-id="0" data-slug-hash="MVbjMN" data-default-tab="css,result" data-user="susiec20" data-embed-version="2" data-pen-title="Box Model CSS" class="codepen">See the Pen <a href="https://codepen.io/susiec20/pen/MVbjMN/">Box Model CSS</a> by Susie (<a href="https://codepen.io/susiec20">@susiec20</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<p>Padding seperates content from the border and the margin add space between the element in relation to other elements.</p>
 <h2 id="colour-names">Colour Names</h2>
 <p>Colours in CSS are usually written as <a href="http://www.mathsisfun.com/hexadecimals.html">hexidecimal numbers</a>. This <a href="https://htmlcolorcodes.com/">website</a> provides a tool to get a colour's hexidecimal value.</p>
 <h2 id="applying-css-to-html">Applying CSS to HTML</h2>
