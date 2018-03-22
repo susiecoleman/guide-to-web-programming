@@ -229,4 +229,20 @@ for(var i = 0; i < fruits.length; i++) {
 
 In this example the condition that makes the loop stops looping is related to the length of the list. Also the variable `i` is used as the index to retreive items from the list.
 
-# TODO Applying Javascript to HTML
+## Applying Javascript to HTML
+
+Typically Javascript is written in a different file to the HTML. In order for the javascript to run when the html page is loaded the javascript file needs to be linked to the html document. Imagine you have created 2 files in the same directory (or folder) on your computer one called script.js and one called index.html. To link them together a `<script>` tag is used.
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+        <h1>My Website</h1>
+        <script src="script.js"></script>
+	</body>
+</html>
+```
+
+The script tag can in theory go anywhere as long as it's within the `<html>` tag. However it typically is the final tag within the body tag so that all of the html content is parsed by the browser before it tries to get the javascript file. This allows your user to start reading the site even if the javascript hasn't yet run. This is useful for slow web connections. Also it means all the elements of the page that the javascript might manipute or refer to will have been rendered by the browser.

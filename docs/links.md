@@ -23,3 +23,5 @@
 
 ## Javascript
 [Introduction to Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+
+[Codecademy's Introduction to Javascript](https://www.codecademy.com/learn/introduction-to-javascript)
