@@ -155,10 +155,78 @@ if(number !== 5) {
 
 Conditional statements make code more interesting. Up to this point all the code has done the same thing every time it is run. With the introduction of if statement what the code does when executed now depends on whether or not the conditional statement is true or false. In the example above if number is assigned to 6 instead of 5 the code will do something different when it is run.
 
-# TODO Incrementing numbers
+## Loops
 
-# TODO For loops
-A basic for loop
-A for loop and an array
+A common scenario in programming is to want to execute the same instruction multiple times. For example printing to the console. One solution is to write the same line of code multiple times:
+```javascript
+console.log("hello");
+console.log("hello");
+console.log("hello");
+console.log("hello");
+console.log("hello");
+```
+
+However this is time consuming (even with copy and paste) and if we wanted to print `goodbye` instead it would be neccessary to change it 5 times. A better solution is to use a loop.
+
+### For Loops
+
+A for loop will repeat until a condition is false. So if the condition is never false it will run forever.
+
+```javascript
+for(var i = 0; i < 5 ; i++) {
+    console.log("hello");
+}
+```
+[Interactive Example](https://jsbin.com/yuqetot/edit?js,console)
+
+What the code above does is:
+
+1. create a variable called `i` and give it the value `0`
+2. check if `i` is less than `5`
+3. execute the code inside the curly brackets: `console.log("hello")`
+4. Add `1` to `i`
+
+The code will continue to loop doing steps 2 to 4 until i is no longer less than 5. Once the loop has finished running the next line of code will be executed. For example for this program:
+
+```javascript
+for(var i = 0; i < 5 ; i++) {
+    console.log("hello");
+}
+console.log("Finished executing loop");
+```
+[Interactive Version](https://jsbin.com/banaxek/edit?js,console)
+
+The output would be:
+```javascript
+"hello"
+"hello"
+"hello"
+"hello"
+"hello"
+"Finished executing loop"
+```
+
+The variable `i` we create can also be referred to in the code. For example if we wanted to print the numbers 1 to 10:
+
+```javascript
+for(var i = 1; i <= 10 ; i++) {
+    console.log(i);
+}
+```
+[Interactive Version](https://jsbin.com/wajamoh/edit?js,console)
+
+#### For Loops and Lists
+
+For loops can be used to iterate through lists.
+
+```javascript
+var fruits = ["apple", "banana", "cherry"];
+for(var i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+```
+[Interactive Version](https://jsbin.com/nuboruf/edit?js,console)
+
+In this example the condition that makes the loop stops looping is related to the length of the list. Also the variable `i` is used as the index to retreive items from the list.
 
 # TODO Applying Javascript to HTML
