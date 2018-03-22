@@ -138,20 +138,25 @@
         
             <li class="second-level"><a href="#types">Types</a></li>
             
+                <li class="third-level"><a href="#operations-on-numbers">Operations on Numbers</a></li>
+            
                 <li class="third-level"><a href="#comments">Comments</a></li>
             
         
             <li class="second-level"><a href="#arrays">Arrays</a></li>
             
         
-    
-        <li class="first-level "><a href="#todo-boolean-logic-and-if-statements">TODO Boolean logic and if statements</a></li>
+            <li class="second-level"><a href="#conditional-statements">Conditional Statements</a></li>
+            
+                <li class="third-level"><a href="#conditions">Conditions</a></li>
+            
+                <li class="third-level"><a href="#putting-it-all-together">Putting it all together</a></li>
+            
         
-    
-        <li class="first-level "><a href="#todo-incrementing-numbers">TODO Incrementing numbers</a></li>
-        
-    
-        <li class="first-level "><a href="#todo-for-loops">TODO For loops</a></li>
+            <li class="second-level"><a href="#loops">Loops</a></li>
+            
+                <li class="third-level"><a href="#for-loops">For Loops</a></li>
+            
         
     
         <li class="first-level "><a href="#todo-applying-javascript-to-html">TODO Applying Javascript to HTML</a></li>
@@ -210,6 +215,8 @@ var punctuation = &quot;@£$`!!{}&quot;;
 </code></pre>
 
 <p><a href="https://jsbin.com/ruqiros/edit?js,console">Interactive Version</a></p>
+<h3 id="operations-on-numbers">Operations on Numbers</h3>
+<p>In javascript it is possible to add <code>+</code> subtract <code>-</code> multiply <code>*</code> and divide <code>/</code> numbers. Numbers can also be incremented using <code>++</code> and decremented using <code>--</code></p>
 <h3 id="comments">Comments</h3>
 <p><code>//</code> In a javascript file denotes a comment. Any line that starts with <code>//</code> The browser will ignore. So in this example</p>
 <pre><code class="javascript">var x = 5;
@@ -247,13 +254,102 @@ shoppingList.push(&quot;dates&quot;);
 
 <p><a href="https://jsbin.com/fezetam/edit?js,console">Interactive version of all array examples</a></p>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Full guide on arrays</a></p>
-<h1 id="todo-boolean-logic-and-if-statements">TODO Boolean logic and if statements</h1>
-<p>Comparitors
-Flow of controls</p>
-<h1 id="todo-incrementing-numbers">TODO Incrementing numbers</h1>
-<h1 id="todo-for-loops">TODO For loops</h1>
-<p>A basic for loop
-A for loop and an array</p>
+<h2 id="conditional-statements">Conditional Statements</h2>
+<p>These are also know as <code>if else</code> statements. They are used to make sure that code is only executed if a statement is true. For example you might want your program to do something different depending on whether a variable has an even or an odd value. An if statement has the following structure:</p>
+<pre><code class="javascript">if(condition){
+    statement;
+} else {
+    otherStatement;
+}
+</code></pre>
+
+<p>where <code>statement</code> is executed if the condition is true and <code>otherStatement</code> is executed if it is false. </p>
+<h3 id="conditions">Conditions</h3>
+<p>The condition is a statement that evaluates to true or false. The expressions below all evaluate to true and show the different ways of comparing 2 items </p>
+<pre><code class="javascript">// 3 is equal to 3
+    3 === 3
+// 3 is not equal to 2
+    3 !== 2
+// 3 is less than 5
+    3 &lt; 5
+// 3 is greater than 1
+    3 &gt; 1
+// 3 is less than or equal to 3
+    3 &lt;= 3
+// 3 is greater than or equal to 3
+    3 &gt;= 3
+</code></pre>
+
+<h3 id="putting-it-all-together">Putting it all together</h3>
+<pre><code class="javascript">var number = 5;
+if(number !== 5) {
+    console.log(&quot;This is true&quot;);
+} else {
+    console.log(&quot;This is false&quot;);
+}
+</code></pre>
+
+<p><a href="https://jsbin.com/zotoqak/edit?js,console">Interactive Version</a></p>
+<p>Conditional statements make code more interesting. Up to this point all the code has done the same thing every time it is run. With the introduction of if statement what the code does when executed now depends on whether or not the conditional statement is true or false. In the example above if number is assigned to 6 instead of 5 the code will do something different when it is run.</p>
+<h2 id="loops">Loops</h2>
+<p>A common scenario in programming is to want to execute the same instruction multiple times. For example printing to the console. One solution is to write the same line of code multiple times:</p>
+<pre><code class="javascript">console.log(&quot;hello&quot;);
+console.log(&quot;hello&quot;);
+console.log(&quot;hello&quot;);
+console.log(&quot;hello&quot;);
+console.log(&quot;hello&quot;);
+</code></pre>
+
+<p>However this is time consuming (even with copy and paste) and if we wanted to print <code>goodbye</code> instead it would be neccessary to change it 5 times. A better solution is to use a loop.</p>
+<h3 id="for-loops">For Loops</h3>
+<p>A for loop will repeat until a condition is false. So if the condition is never false it will run forever.</p>
+<pre><code class="javascript">for(var i = 0; i &lt; 5 ; i++) {
+    console.log(&quot;hello&quot;);
+}
+</code></pre>
+
+<p><a href="https://jsbin.com/yuqetot/edit?js,console">Interactive Example</a></p>
+<p>What the code above does is:</p>
+<ol>
+<li>create a variable called <code>i</code> and give it the value <code>0</code></li>
+<li>check if <code>i</code> is less than <code>5</code></li>
+<li>execute the code inside the curly brackets: <code>console.log("hello")</code></li>
+<li>Add <code>1</code> to <code>i</code></li>
+</ol>
+<p>The code will continue to loop doing steps 2 to 4 until i is no longer less than 5. Once the loop has finished running the next line of code will be executed. For example for this program:</p>
+<pre><code class="javascript">for(var i = 0; i &lt; 5 ; i++) {
+    console.log(&quot;hello&quot;);
+}
+console.log(&quot;Finished executing loop&quot;);
+</code></pre>
+
+<p><a href="https://jsbin.com/banaxek/edit?js,console">Interactive Version</a></p>
+<p>The output would be:</p>
+<pre><code class="javascript">&quot;hello&quot;
+&quot;hello&quot;
+&quot;hello&quot;
+&quot;hello&quot;
+&quot;hello&quot;
+&quot;Finished executing loop&quot;
+</code></pre>
+
+<p>The variable <code>i</code> we create can also be referred to in the code. For example if we wanted to print the numbers 1 to 10:</p>
+<pre><code class="javascript">for(var i = 1; i &lt;= 10 ; i++) {
+    console.log(i);
+}
+</code></pre>
+
+<p><a href="https://jsbin.com/wajamoh/edit?js,console">Interactive Version</a></p>
+<h4 id="for-loops-and-lists">For Loops and Lists</h4>
+<p>For loops can be used to iterate through lists.</p>
+<pre><code class="javascript">var fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;];
+for(var i = 0; i &lt; fruits.length; i++) {
+    console.log(fruits[i]);
+}
+</code></pre>
+
+<p><a href="https://jsbin.com/nuboruf/edit?js,console">Interactive Version</a></p>
+<p>In this example the condition that makes the loop stops looping is related to the length of the list. Also the variable <code>i</code> is used as the index to retreive items from the list.</p>
 <h1 id="todo-applying-javascript-to-html">TODO Applying Javascript to HTML</h1></div>
         
     </div>
