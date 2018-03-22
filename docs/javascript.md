@@ -68,7 +68,6 @@ console.log(x);
 ```
 The value printed out will be 5
 
-
 ## Arrays
 
 An array is a list of items. For example
@@ -108,9 +107,49 @@ shoppingList.push("dates");
 
 [Full guide on arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
-# TODO Boolean logic and if statements
-Comparitors
-Flow of controls
+## Conditional Statements
+
+These are also know as `if else` statements. They are used to make sure that code is only executed if a statement is true. For example you might want your program to do something different depending on whether a variable has an even or an odd value. An if statement has the following structure:
+```javascript
+if(condition){
+    statement;
+} else {
+    otherStatement;
+}
+```
+where `statement` is executed if the condition is true and `otherStatement` is executed if it is false. 
+
+### Conditions
+
+The condition is a statement that evaluates to true or false. The expressions below all evaluate to true and show the different ways of comparing 2 items 
+```javascript
+// 3 is equal to 3
+    3 === 3
+// 3 is not equal to 2
+    3 !== 2
+// 3 is less than 5
+    3 < 5
+// 3 is greater than 1
+    3 > 1
+// 3 is less than or equal to 3
+    3 <= 3
+// 3 is greater than or equal to 3
+    3 >= 3
+```
+
+### Putting it all together
+
+```javascript
+var number = 5;
+if(number !== 5) {
+    console.log("This is true");
+} else {
+    console.log("This is false");
+}
+```
+[Interactive Version](https://jsbin.com/zotoqak/edit?js,console)
+
+Conditional statements make code more interesting. Up to this point all the code has done the same thing every time it is run. With the introduction of if statement what the code does when executed now depends on whether or not the conditional statement is true or false. In the example above if number is assigned to 6 instead of 5 the code will do something different when it is run.
 
 # TODO Incrementing numbers
 
