@@ -59,6 +59,10 @@ var punctuation = "@£$`!!{}";
 ```
 [Interactive Version](https://jsbin.com/ruqiros/edit?js,console)
 
+### Operations on Numbers
+
+In javascript it is possible to add `+` subtract `-` multiply `*` and divide `/` numbers. Numbers can also be incremented using `++` and decremented using `--`
+
 ### Comments
 `//` In a javascript file denotes a comment. Any line that starts with `//` The browser will ignore. So in this example
 ```javascript
