@@ -8,4 +8,5 @@ This documentation covers the concepts taught to the Education Centre staff as p
 - Manipulating the DOM
 - Event Listeners
 
-## TODO add Licence
+## Licence
+Apache V2 licence
