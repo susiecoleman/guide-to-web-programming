@@ -236,24 +236,26 @@ Functions are a way to prevent you from having to write the same piece of code m
 var mathsTestScores = [50, 70, 35, 60]
 var mathsTotal = 0;
 for(var i = 0; i < mathsTestScores.length; i++) {
-    mathsTotal = mathsTotal + mathsTotal[i];
+    mathsTotal = mathsTotal + mathsTestScores[i];
 }
 var mathsAverageScore = mathsTotal / mathsTestScores.length
 
 var scienceTestScores = [65, 93, 52, 10]
 var scienceTotal = 0;
 for(var i = 0; i < scienceTestScores.length; i++) {
-    scienceTotal = scienceTotal + scienceTotal[i];
+    scienceTotal = scienceTotal + scienceTestScores[i];
 }
 var scienceAverageScore = scienceTotal / scienceTestScores.length
 
 var englishTestScores = [53, 80, 49, 61]
 var englishTotal = 0;
 for(var i = 0; i < englishTestScores.length; i++) {
-    englishTotal = englishTotal + englishTotal[i];
+    englishTotal = englishTotal + englishTestScores[i];
 }
 var englishAverageScore = englishTotal / englishTestScores.length
 ```
+[Interactive Version](https://jsbin.com/goliviy/edit?js,console)
+
 This is a lot of duplicated code. This is more effort to type out but also it's more likely you will make mistakes than if you were only typing it out once. Also if you changed the way you calculated the average and wanted the median instead of the mean you would need to change the code in lots of places.
 
 The solution is to use functions. Functions are bits of code that can be reused.
@@ -272,6 +274,8 @@ This code is not enough to actually get the function to do anything it just defi
 ```javascript
 printHello();
 ```
+[Interactive Version](https://jsbin.com/qunutey/edit?js)
+
 The name followed by `()` will execute the function and will cause the code inside the function to run. This is called calling a function. The function can be called many times.
 
 ## More Interesting Functions
@@ -293,6 +297,8 @@ calculateMean(mathsTestScores);
 calculateMean(englishTestScores);
 calculateMean(scienceTestScores);
 ```
+[Interactive Version](https://jsbin.com/pufiti/edit?js,console)
+
 In this example the test scores are passed in and the result is logged to the console. There is much less duplication.
 
 ## Returning Values
@@ -303,7 +309,7 @@ In all the fucntion examples so far the result is logged straight to the console
 function calculateMean(scores){
     var total = 0;
     for(var i = 0; i < scores.length; i++) {
-        total = total + total[i];
+        total = total + scores[i];
     }
     var mean = total / scores.length;
     return mean;
@@ -311,6 +317,7 @@ function calculateMean(scores){
 var mathsTestScores = [50, 70, 35, 60];
 var mean = calculateMean(mathsTestScores);
 ```
+[Interactive Version](https://jsbin.com/guwicer/edit?js,console)
 
 Now the function doesn't log anything to the console it returns the result to the caller. In this example we have taken this value and assigned it to the variable called `mean`. We can now do anything with this variable we would do with any other variable. It could be logged to the console, displayed on a web page, passed to another function etc.
 
