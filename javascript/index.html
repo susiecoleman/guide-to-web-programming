@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="shortcut icon" href="../img/favicon.ico">
 
     <title>Javascript - Web Programming</title>
 
     <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
     <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
@@ -43,7 +43,6 @@
 
         <!-- Collapsed navigation -->
         <div class="navbar-header">
-            
             <!-- Expander button -->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -54,12 +53,12 @@
             
 
             <!-- Main title -->
+
             <a class="navbar-brand" href="..">Web Programming</a>
         </div>
 
         <!-- Expanded navigation -->
         <div class="navbar-collapse collapse">
-            
                 <!-- Main navigation -->
                 <ul class="nav navbar-nav">
                 
@@ -89,32 +88,34 @@
                 
                 
                     <li >
+                        <a href="../interactiveJavascript/">Interactive Javascript</a>
+                    </li>
+                
+                
+                
+                    <li >
                         <a href="../links/">Useful Links</a>
                     </li>
                 
                 
                 </ul>
-            
 
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i> Search
-                    </a>
-                </li>
-                
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fa fa-search"></i> Search
+                        </a>
+                    </li>
                     <li >
                         <a rel="next" href="../css/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../links/">
+                        <a rel="prev" href="../interactiveJavascript/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
-                
-                
             </ul>
         </div>
     </div>
@@ -124,44 +125,34 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-    
         <li class="first-level active"><a href="#javascript">Javascript</a></li>
-        
             <li class="second-level"><a href="#jsbin">JSBin</a></li>
-            
-        
+                
             <li class="second-level"><a href="#debugging-consolelog">Debugging - Console.log</a></li>
-            
-        
+                
             <li class="second-level"><a href="#variables">Variables</a></li>
-            
-        
+                
             <li class="second-level"><a href="#types">Types</a></li>
-            
+                
                 <li class="third-level"><a href="#operations-on-numbers">Operations on Numbers</a></li>
-            
                 <li class="third-level"><a href="#comments">Comments</a></li>
-            
-        
             <li class="second-level"><a href="#arrays">Arrays</a></li>
-            
-        
+                
             <li class="second-level"><a href="#conditional-statements">Conditional Statements</a></li>
-            
+                
                 <li class="third-level"><a href="#conditions">Conditions</a></li>
-            
                 <li class="third-level"><a href="#putting-it-all-together">Putting it all together</a></li>
-            
-        
             <li class="second-level"><a href="#loops">Loops</a></li>
-            
+                
                 <li class="third-level"><a href="#for-loops">For Loops</a></li>
-            
-        
-            <li class="second-level"><a href="#applying-javascript-to-html">Applying Javascript to HTML</a></li>
-            
-        
-    
+            <li class="second-level"><a href="#functions">Functions</a></li>
+                
+            <li class="second-level"><a href="#the-syntax">The Syntax</a></li>
+                
+            <li class="second-level"><a href="#more-interesting-functions">More Interesting Functions</a></li>
+                
+            <li class="second-level"><a href="#returning-values">Returning Values</a></li>
+                
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
@@ -350,20 +341,82 @@ for(var i = 0; i &lt; fruits.length; i++) {
 
 <p><a href="https://jsbin.com/nuboruf/edit?js,console">Interactive Version</a></p>
 <p>In this example the condition that makes the loop stops looping is related to the length of the list. Also the variable <code>i</code> is used as the index to retreive items from the list.</p>
-<h2 id="applying-javascript-to-html">Applying Javascript to HTML</h2>
-<p>Typically Javascript is written in a different file to the HTML. In order for the javascript to run when the html page is loaded the javascript file needs to be linked to the html document. Imagine you have created 2 files in the same directory (or folder) on your computer one called script.js and one called index.html. To link them together a <code>&lt;script&gt;</code> tag is used.</p>
-<pre><code class="html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;My Website&lt;/h1&gt;
-        &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
+<h2 id="functions">Functions</h2>
+<p>Functions are a way to prevent you from having to write the same piece of code mutiple times. For example if you had to find the mean of 3 lists you would need to do the following:</p>
+<pre><code class="javascript">var mathsTestScores = [50, 70, 35, 60]
+var mathsTotal = 0;
+for(var i = 0; i &lt; mathsTestScores.length; i++) {
+    mathsTotal = mathsTotal + mathsTestScores[i];
+}
+var mathsAverageScore = mathsTotal / mathsTestScores.length
+
+var scienceTestScores = [65, 93, 52, 10]
+var scienceTotal = 0;
+for(var i = 0; i &lt; scienceTestScores.length; i++) {
+    scienceTotal = scienceTotal + scienceTestScores[i];
+}
+var scienceAverageScore = scienceTotal / scienceTestScores.length
+
+var englishTestScores = [53, 80, 49, 61]
+var englishTotal = 0;
+for(var i = 0; i &lt; englishTestScores.length; i++) {
+    englishTotal = englishTotal + englishTestScores[i];
+}
+var englishAverageScore = englishTotal / englishTestScores.length
 </code></pre>
 
-<p>The script tag can in theory go anywhere as long as it's within the <code>&lt;html&gt;</code> tag. However it typically is the final tag within the body tag so that all of the html content is parsed by the browser before it tries to get the javascript file. This allows your user to start reading the site even if the javascript hasn't yet run. This is useful for slow web connections. Also it means all the elements of the page that the javascript might manipute or refer to will have been rendered by the browser.</p></div>
+<p><a href="https://jsbin.com/goliviy/edit?js,console">Interactive Version</a></p>
+<p>This is a lot of duplicated code. This is more effort to type out but also it's more likely you will make mistakes than if you were only typing it out once. Also if you changed the way you calculated the average and wanted the median instead of the mean you would need to change the code in lots of places.</p>
+<p>The solution is to use functions. Functions are bits of code that can be reused.</p>
+<h2 id="the-syntax">The Syntax</h2>
+<pre><code class="javascript">function printHello() {
+    console.log(&quot;Hello!&quot;);
+}
+</code></pre>
+
+<p>There are a few different parts to a function. First the <code>function</code> bit. This is to indicate that this will be a function. <code>printHello</code> this is the name of the function. Like variables this is how we refer to the function elsewhere in the code. You should give a function a name that reflects what it does. All functions need <code>()</code>, later examples will show why. The <code>{}</code> surround the code that belongs to the function and determines what the code actually does. So in the example above the function will console log <code>Hello!</code>.</p>
+<p>This code is not enough to actually get the function to do anything it just defines what the function will do. To actually get the code to log <code>Hello!</code> to the console you need to call it.</p>
+<pre><code class="javascript">printHello();
+</code></pre>
+
+<p><a href="https://jsbin.com/qunutey/edit?js">Interactive Version</a></p>
+<p>The name followed by <code>()</code> will execute the function and will cause the code inside the function to run. This is called calling a function. The function can be called many times.</p>
+<h2 id="more-interesting-functions">More Interesting Functions</h2>
+<p>A common problem in programming is performing a calculation for example working out the average of a list of scores. In order to do this the function also needs to know which list it is calculating the average of. This means the function also needs a parameter. This allows the caller of the function to give the function extra information.</p>
+<pre><code class="javascript">function calculateMean(scores){
+    var total = 0;
+    for(var i = 0; i &lt; scores.length; i++) {
+        total = total + total[i];
+    }
+    var mean = total / scores.length;
+    console.log(mean);
+}
+var mathsTestScores = [50, 70, 35, 60];
+var scienceTestScores = [65, 93, 52, 10];
+var englishTestScores = [53, 80, 49, 61];
+calculateMean(mathsTestScores);
+calculateMean(englishTestScores);
+calculateMean(scienceTestScores);
+</code></pre>
+
+<p><a href="https://jsbin.com/pufiti/edit?js,console">Interactive Version</a></p>
+<p>In this example the test scores are passed in and the result is logged to the console. There is much less duplication.</p>
+<h2 id="returning-values">Returning Values</h2>
+<p>In all the fucntion examples so far the result is logged straight to the console. This is not very useful. For example if you were making a website for a school you probably wouldn't want to log the mean score but display them on a website. This is done by using the return statement.</p>
+<pre><code class="javascript">function calculateMean(scores){
+    var total = 0;
+    for(var i = 0; i &lt; scores.length; i++) {
+        total = total + scores[i];
+    }
+    var mean = total / scores.length;
+    return mean;
+}
+var mathsTestScores = [50, 70, 35, 60];
+var mean = calculateMean(mathsTestScores);
+</code></pre>
+
+<p><a href="https://jsbin.com/guwicer/edit?js,console">Interactive Version</a></p>
+<p>Now the function doesn't log anything to the console it returns the result to the caller. In this example we have taken this value and assigned it to the variable called <code>mean</code>. We can now do anything with this variable we would do with any other variable. It could be logged to the console, displayed on a web page, passed to another function etc.</p></div>
         
     </div>
 
@@ -382,6 +435,8 @@ for(var i = 0; i &lt; fruits.length; i++) {
     </script>
     <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
     <script src="../js/base.js"></script>
+    <script src="../search/require.js"></script>
+    <script src="../search/search.js"></script>
 
     <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
         <div class="modal-dialog">

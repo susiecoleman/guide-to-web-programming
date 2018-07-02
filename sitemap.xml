@@ -3,40 +3,48 @@
 
     
     <url>
-     <loc>None/</loc>
-     <lastmod>2018-03-22</lastmod>
+     <loc>/</loc>
+     <lastmod>2018-07-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/html/</loc>
-     <lastmod>2018-03-22</lastmod>
+     <loc>/html/</loc>
+     <lastmod>2018-07-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/css/</loc>
-     <lastmod>2018-03-22</lastmod>
+     <loc>/css/</loc>
+     <lastmod>2018-07-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/javascript/</loc>
-     <lastmod>2018-03-22</lastmod>
+     <loc>/javascript/</loc>
+     <lastmod>2018-07-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/links/</loc>
-     <lastmod>2018-03-22</lastmod>
+     <loc>/interactiveJavascript/</loc>
+     <lastmod>2018-07-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/links/</loc>
+     <lastmod>2018-07-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
