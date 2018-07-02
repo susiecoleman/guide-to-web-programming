@@ -4,9 +4,10 @@ This documentation covers the concepts taught to the Education Centre staff as p
 
 ## Concepts still to cover/add to the guide
 
-- Functions
-- Manipulating the DOM
+- Manipulating the DOM (covered how to get elements from the DOM but not how to change them.)
+- Setting attributes with javascript
 - Event Listeners
+- Separate page on setting up a webpage and linking files together.
 
 ## Running the Prject
 
